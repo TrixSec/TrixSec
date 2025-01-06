@@ -19,4 +19,4 @@ Currently Working On Waymap And Many Other Tools<br>UP For Collab, Inbox on Tele
 ![](https://github-contributor-stats.vercel.app/api?username=TrixSec&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
 
 ---
-[![](https://profile-counter.glitch.me/TrixSec/count.svg)]
+[!](https://profile-counter.glitch.me/TrixSec/count.svg)
