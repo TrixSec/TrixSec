@@ -1,6 +1,3 @@
-# 💫 About Me:
-Currently Working On Waymap And Many Other Tools<br>UP For Collab, Inbox on Telegram
-
 
 ## 🌐 Socials:
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@trixcyrus) 
