@@ -1,5 +1,5 @@
 # 💫 About Me:
-Currently Building Clause AI <br>Working on Python Project "Waymap"<br>Working on Startup: Blackorigin Tech<br>Built : Competence AI || Cipher Tools Hub<br>
+Currently Building CompetenceCode, ClauseAI <br>Working on Python Project "Waymap"<br>Working on Startup: CompetenceAi<br>Built : Competence AI || Cipher Tools Hub<br>
 
 
 ## 🌐 Socials:
