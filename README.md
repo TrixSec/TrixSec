@@ -1,5 +1,10 @@
 # 💫 About Me:
-Currently Building CompetenceCode; Cipher tools hub v2<br>Working on Python Project "Waymap"<br>Working on Startup: CompetenceAi<br>
+Building AI Agent Swarm 
+Built : 
+Edu agent :Maple AI
+Legal agent: Clause AI
+Cybersecurity Agent: Agent Shield
+
 
 
 ## 🌐 Socials:
