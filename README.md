@@ -22,3 +22,4 @@ Cybersecurity Agent: Agent Shield
 ![](https://github-contributor-stats.vercel.app/api?username=TrixSec&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+![](https://komarev.com/ghpvc/?username=trixsec)
