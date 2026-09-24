@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="360" viewBox="0 0 830 360">
+  <defs>
+    <linearGradient id="timeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+
+    <linearGradient id="timeNodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#71717a"/>
+    </linearGradient>
+
+    <linearGradient id="tCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0d0d10"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    @keyframes linePulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.9; }
+    }
+    @keyframes nodeGlow {
+      0%, 100% { r: 4.5px; opacity: 0.8; }
+      50% { r: 6px; opacity: 1; }
+    }
+    .t-spine { animation: linePulse 4s ease-in-out infinite; }
+    .node-dot { animation: nodeGlow 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="828" height="358" rx="12" fill="url(#timeBg)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Section Header -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="mono" font-size="11" font-weight="600" fill="#71717a" letter-spacing="1">CONTRIBUTION TIMELINE &amp; MILESTONES</text>
+    <line x1="0" y1="12" x2="766" y2="12" stroke="#27272a" stroke-width="0.8"/>
+  </g>
+
+  <!-- Timeline Spine -->
+  <line x1="58" y1="65" x2="58" y2="315" stroke="#3f3f46" stroke-width="1.5" stroke-dasharray="3, 3" class="t-spine"/>
+
+  <!-- MILESTONE 1: EVAN CORE & AGENT SWARM -->
+  <g transform="translate(58, 70)">
+    <!-- Node -->
+    <circle cx="0" cy="18" r="5" fill="#ffffff" stroke="#27272a" stroke-width="2" class="node-dot"/>
+    <!-- Card -->
+    <g transform="translate(24, 0)">
+      <rect width="716" height="52" rx="6" fill="url(#tCardGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="16" y="21" class="sans" font-size="13" font-weight="700" fill="#f4f4f5">Evan — Autonomous Agent Swarm Core</text>
+      <text x="590" y="20" class="mono" font-size="9.5" fill="#71717a">ARCHITECTURE</text>
+      <text x="16" y="38" class="sans" font-size="11.5" fill="#a1a1aa">
+        Engineered multi-agent consensus, async state machines, and dynamic inter-agent task delegation.
+      </text>
+    </g>
+  </g>
+
+  <!-- MILESTONE 2: MAPLE AI -->
+  <g transform="translate(58, 134)">
+    <!-- Node -->
+    <circle cx="0" cy="18" r="4.5" fill="#a1a1aa" stroke="#27272a" stroke-width="2"/>
+    <!-- Card -->
+    <g transform="translate(24, 0)">
+      <rect width="716" height="52" rx="6" fill="url(#tCardGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="16" y="21" class="sans" font-size="13" font-weight="700" fill="#f4f4f5">Maple AI — Autonomous Educational Research Agent</text>
+      <text x="618" y="20" class="mono" font-size="9.5" fill="#71717a">RESEARCH</text>
+      <text x="16" y="38" class="sans" font-size="11.5" fill="#a1a1aa">
+        Developed real-time knowledge graph synthesis, adaptive learning reasoning, and automated documentation.
+      </text>
+    </g>
+  </g>
+
+  <!-- MILESTONE 3: AGENT SHIELD -->
+  <g transform="translate(58, 198)">
+    <!-- Node -->
+    <circle cx="0" cy="18" r="4.5" fill="#a1a1aa" stroke="#27272a" stroke-width="2"/>
+    <!-- Card -->
+    <g transform="translate(24, 0)">
+      <rect width="716" height="52" rx="6" fill="url(#tCardGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="16" y="21" class="sans" font-size="13" font-weight="700" fill="#f4f4f5">Agent Shield — Cybersecurity &amp; Threat Defense</text>
+      <text x="635" y="20" class="mono" font-size="9.5" fill="#71717a">SECURITY</text>
+      <text x="16" y="38" class="sans" font-size="11.5" fill="#a1a1aa">
+        Implemented automated vulnerability detection, zero-trust policy enforcement, and incident remediation.
+      </text>
+    </g>
+  </g>
+
+  <!-- MILESTONE 4: DISTRIBUTED INFRASTRUCTURE -->
+  <g transform="translate(58, 262)">
+    <!-- Node -->
+    <circle cx="0" cy="18" r="4.5" fill="#a1a1aa" stroke="#27272a" stroke-width="2"/>
+    <!-- Card -->
+    <g transform="translate(24, 0)">
+      <rect width="716" height="52" rx="6" fill="url(#tCardGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="16" y="21" class="sans" font-size="13" font-weight="700" fill="#f4f4f5">Distributed Pipelines &amp; Streaming Infrastructure</text>
+      <text x="618" y="20" class="mono" font-size="9.5" fill="#71717a">BACKEND</text>
+      <text x="16" y="38" class="sans" font-size="11.5" fill="#a1a1aa">
+        High-throughput BullMQ + Redis task queues, WebSocket bidirectional streaming, Docker &amp; k8s deployments.
+      </text>
+    </g>
+  </g>
+
+</svg>

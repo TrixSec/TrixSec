@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="320" viewBox="0 0 830 320">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="spaceGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0e0e12"/>
+      <stop offset="60%" stop-color="#050507"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Halftone Dot Pattern 1 (Base Moon Texture) -->
+    <pattern id="htMoon" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="3.5" cy="3.5" r="2.2" fill="#8e8e93"/>
+    </pattern>
+
+    <!-- Halftone Dot Pattern 2 (Crater Dense Dots) -->
+    <pattern id="htCrater" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="3.5" cy="3.5" r="1.3" fill="#3a3a3c"/>
+    </pattern>
+
+    <!-- Halftone Dot Pattern 3 (Shading / Core Dark) -->
+    <pattern id="htShadow" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="3.5" cy="3.5" r="1.7" fill="#52525b"/>
+    </pattern>
+
+    <!-- Moon Halo / Outer Glow -->
+    <radialGradient id="moonHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="90%" stop-color="#8e8e93" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Traveling Halftone Light Sweep Gradient -->
+    <linearGradient id="htWaveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Moon Body Clip Path -->
+    <clipPath id="moonDiscClip">
+      <circle cx="415" cy="160" r="115"/>
+    </clipPath>
+
+    <!-- Crater Clip Paths -->
+    <clipPath id="crater1Clip">
+      <ellipse cx="380" cy="98" rx="14" ry="12"/>
+    </clipPath>
+    <clipPath id="crater2Clip">
+      <ellipse cx="482" cy="142" rx="27" ry="24"/>
+    </clipPath>
+    <clipPath id="crater3Clip">
+      <ellipse cx="348" cy="180" rx="18" ry="15"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes htPulse {
+      0%, 100% { opacity: 0.75; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.015); }
+    }
+    @keyframes sweepDiagonal {
+      0% { transform: translate(-140px, -140px); }
+      50% { transform: translate(140px, 140px); }
+      100% { transform: translate(-140px, -140px); }
+    }
+    @keyframes waveShift {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 28; }
+    }
+    @keyframes auraBreath {
+      0%, 100% { transform: scale(0.98); opacity: 0.4; }
+      50% { transform: scale(1.03); opacity: 0.8; }
+    }
+    @keyframes starDrift {
+      0%, 100% { opacity: 0.2; transform: translateY(0); }
+      50% { opacity: 0.7; transform: translateY(-4px); }
+    }
+
+    .moon-halftone-core {
+      transform-origin: 415px 160px;
+      animation: htPulse 4s ease-in-out infinite;
+    }
+    .sweep-layer {
+      animation: sweepDiagonal 6s ease-in-out infinite;
+    }
+    .ambient-aura {
+      transform-origin: 415px 160px;
+      animation: auraBreath 6s ease-in-out infinite;
+    }
+    .star-p1 { animation: starDrift 4s ease-in-out infinite; }
+    .star-p2 { animation: starDrift 6s ease-in-out infinite 1.5s; }
+  </style>
+
+  <!-- Canvas Container -->
+  <rect width="830" height="320" rx="12" fill="url(#spaceGrad)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Ambient Halftone Star Field -->
+  <g fill="#71717a">
+    <circle cx="140" cy="70" r="1.5" class="star-p1"/>
+    <circle cx="230" cy="120" r="1.2" class="star-p2"/>
+    <circle cx="670" cy="90" r="1.5" class="star-p1"/>
+    <circle cx="720" cy="150" r="1.2" class="star-p2"/>
+    <circle cx="290" cy="50" r="1.8" class="star-p2"/>
+    <circle cx="560" cy="60" r="1.4" class="star-p1"/>
+  </g>
+
+  <!-- Outer Atmospheric Aura -->
+  <circle cx="415" cy="160" r="136" fill="url(#moonHalo)" class="ambient-aura"/>
+
+  <!-- Orbiting Halftone Dashed Ring -->
+  <circle cx="415" cy="160" r="126" fill="none" stroke="#3f3f46" stroke-width="1" stroke-dasharray="2, 6" style="animation: waveShift 8s linear infinite;"/>
+
+  <!-- MAIN MOON STRUCTURE (CLIP PATH RESTRICTED) -->
+  <g clip-path="url(#moonDiscClip)">
+    <!-- Base Solid Shading Underlay -->
+    <circle cx="415" cy="160" r="115" fill="#2c2c2e"/>
+
+    <!-- Halftone Texture Screen -->
+    <rect x="290" y="35" width="250" height="250" fill="url(#htMoon)" class="moon-halftone-core"/>
+
+    <!-- Deep Shadow Halftone Area (Bottom-Right Crescent Shading) -->
+    <path d="M 415 45 A 115 115 0 0 1 530 160 A 115 115 0 0 1 415 275 A 115 115 0 0 0 415 45 Z" fill="url(#htShadow)" opacity="0.75"/>
+
+    <!-- Craters Rendered with Dense Halftone Dots -->
+    <!-- Crater 1 (Top Center-Left) -->
+    <ellipse cx="380" cy="98" rx="14" ry="12" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="0.8"/>
+    <rect x="360" y="82" width="40" height="32" fill="url(#htCrater)" clip-path="url(#crater1Clip)"/>
+
+    <!-- Crater 2 (Right Middle) -->
+    <ellipse cx="482" cy="142" rx="27" ry="24" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="1"/>
+    <rect x="450" y="112" width="65" height="60" fill="url(#htCrater)" clip-path="url(#crater2Clip)"/>
+
+    <!-- Crater 3 (Lower Left - Behind Mountain Ridge) -->
+    <ellipse cx="348" cy="180" rx="18" ry="15" fill="#1c1c1e" stroke="#3a3a3c" stroke-width="0.8"/>
+    <rect x="325" y="160" width="45" height="40" fill="url(#htCrater)" clip-path="url(#crater3Clip)"/>
+
+    <!-- Animated Diagonal Halftone Light Sweep Band -->
+    <rect x="250" y="0" width="330" height="320" fill="url(#htWaveGrad)" class="sweep-layer" mix-blend-mode="screen"/>
+
+    <!-- FOREGROUND MOUNTAIN SILHOUETTE (Solid Jet Black) -->
+    <!-- Exact reproduction of jagged mountain peaks cutting across the halftone moon -->
+    <polygon points="
+      270,290 
+      270,240 
+      305,225 
+      315,210 
+      328,198 
+      338,202 
+      346,188 
+      355,190 
+      365,180 
+      375,182 
+      385,170 
+      394,175 
+      402,162 
+      409,166 
+      415,138 
+      422,165 
+      430,158 
+      438,172 
+      448,168 
+      458,184 
+      468,178 
+      480,195 
+      492,192 
+      506,212 
+      520,208 
+      540,238 
+      560,290 
+      270,290" 
+      fill="#000000" stroke="#000000" stroke-width="1.5"/>
+
+    <rect x="250" y="275" width="330" height="45" fill="#000000"/>
+  </g>
+
+  <!-- Moon Rim Stroke -->
+  <circle cx="415" cy="160" r="115" fill="none" stroke="#52525b" stroke-width="1.2" opacity="0.6"/>
+</svg>

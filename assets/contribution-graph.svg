@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="200" viewBox="0 0 830 200">
+  <defs>
+    <linearGradient id="gBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    @keyframes heatShimmer {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+    .c4 { animation: heatShimmer 3s ease-in-out infinite; }
+    .c3 { animation: heatShimmer 4s ease-in-out infinite 1s; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="828" height="198" rx="12" fill="url(#gBg)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Top Title -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="sans" font-size="14" font-weight="700" fill="#f4f4f5">3,273 contributions in the last year</text>
+    <text x="700" y="0" class="mono" font-size="10" fill="#71717a">ACTIVITY LOG</text>
+  </g>
+
+  <!-- Inner Graph Panel Border -->
+  <rect x="28" y="42" width="774" height="142" rx="8" fill="#0d0d10" stroke="#27272a" stroke-width="0.8"/>
+
+  <!-- Month Labels -->
+  <g class="mono" font-size="9.5" fill="#71717a" transform="translate(76, 58)">
+    <text x="0" y="0">Sep</text>
+    <text x="52" y="0">Oct</text>
+    <text x="110" y="0">Nov</text>
+    <text x="168" y="0">Dec</text>
+    <text x="226" y="0">Jan</text>
+    <text x="284" y="0">Feb</text>
+    <text x="342" y="0">Mar</text>
+    <text x="400" y="0">Apr</text>
+    <text x="458" y="0">May</text>
+    <text x="516" y="0">Jun</text>
+    <text x="574" y="0">Jul</text>
+    <text x="632" y="0">Aug</text>
+    <text x="682" y="0">Sep</text>
+  </g>
+
+  <!-- Day Labels -->
+  <g class="mono" font-size="9" fill="#71717a" transform="translate(42, 80)">
+    <text x="0" y="10">Mon</text>
+    <text x="0" y="36">Wed</text>
+    <text x="0" y="62">Fri</text>
+  </g>
+
+  <!-- 52x7 Contribution Grid -->
+  <g transform="translate(76, 68)">
+    <!-- Column generation via repeated patterned groups of cells -->
+    <!-- Weeks 1-4 (Sep) -->
+    <g transform="translate(0,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/></g>
+    <g transform="translate(13,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(26,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(39,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+
+    <!-- Weeks 5-8 (Oct) -->
+    <g transform="translate(52,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(65,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(78,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(91,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+
+    <!-- Weeks 9-12 (Nov) -->
+    <g transform="translate(104,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(117,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(130,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/></g>
+    <g transform="translate(143,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+
+    <!-- Weeks 13-17 (Dec) -->
+    <g transform="translate(156,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(169,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(182,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+    <g transform="translate(195,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#a1a1aa"/></g>
+    <g transform="translate(208,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+
+    <!-- Weeks 18-21 (Jan - Peak Burst) -->
+    <g transform="translate(221,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#a1a1aa"/></g>
+    <g transform="translate(234,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="26" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(247,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(260,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+
+    <!-- Weeks 22-25 (Feb - High Activity) -->
+    <g transform="translate(273,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/></g>
+    <g transform="translate(286,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(299,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+    <g transform="translate(312,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+
+    <!-- Weeks 26-29 (Mar) -->
+    <g transform="translate(325,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(338,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(351,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+    <g transform="translate(364,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+
+    <!-- Weeks 30-33 (Apr) -->
+    <g transform="translate(377,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(390,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(403,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/></g>
+    <g transform="translate(416,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+
+    <!-- Weeks 34-38 (May) -->
+    <g transform="translate(429,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(442,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(455,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+    <g transform="translate(468,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+
+    <!-- Weeks 39-42 (Jun) -->
+    <g transform="translate(481,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+    <g transform="translate(494,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/></g>
+    <g transform="translate(507,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="78" width="10" height="10" rx="2.5" fill="#27272a"/></g>
+    <g transform="translate(520,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#52525b"/></g>
+
+    <!-- Weeks 43-46 (Jul) -->
+    <g transform="translate(533,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="39" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+    <g transform="translate(546,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#71717a"/></g>
+    <g transform="translate(559,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="65" width="10" height="10" rx="2.5" fill="#27272a"/><rect y="78" width="10" height="10" rx="2.5" fill="#a1a1aa"/></g>
+    <g transform="translate(572,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="26" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#3f3f46"/></g>
+
+    <!-- Weeks 47-51 (Aug & Sep - Peak Activity) -->
+    <g transform="translate(585,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="13" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#3f3f46"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(598,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="13" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="78" width="10" height="10" rx="2.5" fill="#a1a1aa"/></g>
+    <g transform="translate(611,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="13" width="10" height="10" rx="2.5" fill="#52525b"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(624,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="52" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#a1a1aa"/></g>
+    <g transform="translate(637,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(650,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="39" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="52" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(663,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#71717a"/><rect y="65" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+    <g transform="translate(676,0)"><rect y="0" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="13" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="26" width="10" height="10" rx="2.5" fill="#e4e4e7" class="c4"/><rect y="39" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="52" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/><rect y="65" width="10" height="10" rx="2.5" fill="#a1a1aa"/><rect y="78" width="10" height="10" rx="2.5" fill="#ffffff" class="c4"/></g>
+  </g>
+
+  <!-- Bottom Legend -->
+  <g class="mono" font-size="9" fill="#71717a" transform="translate(620, 168)">
+    <text x="0" y="8">Less</text>
+    <rect x="28" y="0" width="9" height="9" rx="2" fill="#18181b"/>
+    <rect x="40" y="0" width="9" height="9" rx="2" fill="#3f3f46"/>
+    <rect x="52" y="0" width="9" height="9" rx="2" fill="#71717a"/>
+    <rect x="64" y="0" width="9" height="9" rx="2" fill="#a1a1aa"/>
+    <rect x="76" y="0" width="9" height="9" rx="2" fill="#ffffff"/>
+    <text x="90" y="8">More</text>
+  </g>
+</svg>

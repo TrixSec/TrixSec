@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="150" viewBox="0 0 830 150">
+  <defs>
+    <linearGradient id="headBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+
+    <linearGradient id="silverName" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e4e4e7"/>
+      <stop offset="100%" stop-color="#a1a1aa"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  </style>
+
+  <rect x="1" y="1" width="828" height="148" rx="12" fill="url(#headBg)" stroke="#27272a" stroke-width="1"/>
+
+  <g transform="translate(36, 48)">
+    <text x="0" y="0" class="sans" font-size="34" font-weight="800" fill="url(#silverName)" letter-spacing="-0.5">VICKY</text>
+    <text x="0" y="30" class="mono" font-size="13" font-weight="600" fill="#e4e4e7">AI Systems &amp; Software Engineering</text>
+    <text x="0" y="56" class="sans" font-size="12" fill="#8e8e93">
+      Building autonomous agent architectures, distributed backend pipelines, and real-time systems.
+    </text>
+  </g>
+</svg>

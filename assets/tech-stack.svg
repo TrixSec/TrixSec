@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="340" viewBox="0 0 830 340">
+  <defs>
+    <linearGradient id="techBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#111113"/>
+    </linearGradient>
+
+    <pattern id="techGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#27272a" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="828" height="338" rx="14" fill="url(#techBg)" stroke="#27272a" stroke-width="1"/>
+  <rect x="1" y="1" width="828" height="338" rx="14" fill="url(#techGrid)"/>
+
+  <!-- Section Title -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="mono" font-size="11" fill="#71717a" letter-spacing="1.5">TECH STACK</text>
+    <line x1="0" y1="12" x2="766" y2="12" stroke="#27272a" stroke-width="0.8"/>
+  </g>
+
+  <!-- ROW 1: LANGUAGES & RUNTIMES -->
+  <g transform="translate(36, 62)">
+    <text x="0" y="10" class="mono" font-size="10" font-weight="600" fill="#71717a">LANGUAGES &amp; RUNTIMES</text>
+    <g transform="translate(0, 18)">
+      <!-- Python -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Python</text>
+      </g>
+      <!-- TypeScript -->
+      <g transform="translate(90, 0)">
+        <rect width="105" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="52" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">TypeScript</text>
+      </g>
+      <!-- JavaScript -->
+      <g transform="translate(205, 0)">
+        <rect width="100" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="50" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">JavaScript</text>
+      </g>
+      <!-- Node.js -->
+      <g transform="translate(315, 0)">
+        <rect width="85" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="42" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Node.js</text>
+      </g>
+      <!-- Rust -->
+      <g transform="translate(410, 0)">
+        <rect width="65" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="32" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Rust</text>
+      </g>
+      <!-- C -->
+      <g transform="translate(485, 0)">
+        <rect width="45" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="22" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">C</text>
+      </g>
+      <!-- C++ -->
+      <g transform="translate(540, 0)">
+        <rect width="55" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="27" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">C++</text>
+      </g>
+      <!-- Bash / Shell -->
+      <g transform="translate(605, 0)">
+        <rect width="105" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="52" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Bash / Shell</text>
+      </g>
+      <!-- SQL -->
+      <g transform="translate(720, 0)">
+        <rect width="50" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="25" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">SQL</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ROW 2: BACKEND, DATABASES & QUEUES -->
+  <g transform="translate(36, 126)">
+    <text x="0" y="10" class="mono" font-size="10" font-weight="600" fill="#71717a">BACKEND, DATABASES &amp; QUEUES</text>
+    <g transform="translate(0, 18)">
+      <!-- FastAPI -->
+      <g transform="translate(0, 0)">
+        <rect width="85" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="42" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">FastAPI</text>
+      </g>
+      <!-- PostgreSQL -->
+      <g transform="translate(95, 0)">
+        <rect width="105" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="52" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">PostgreSQL</text>
+      </g>
+      <!-- MongoDB -->
+      <g transform="translate(210, 0)">
+        <rect width="90" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="45" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">MongoDB</text>
+      </g>
+      <!-- Redis -->
+      <g transform="translate(310, 0)">
+        <rect width="70" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="35" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Redis</text>
+      </g>
+      <!-- Supabase -->
+      <g transform="translate(390, 0)">
+        <rect width="90" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="45" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Supabase</text>
+      </g>
+      <!-- BullMQ -->
+      <g transform="translate(490, 0)">
+        <rect width="80" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">BullMQ</text>
+      </g>
+      <!-- REST -->
+      <g transform="translate(580, 0)">
+        <rect width="65" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="32" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">REST</text>
+      </g>
+      <!-- WebSockets -->
+      <g transform="translate(655, 0)">
+        <rect width="115" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="57" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">WebSockets</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ROW 3: CLOUD, DEVOPS & INFRASTRUCTURE -->
+  <g transform="translate(36, 190)">
+    <text x="0" y="10" class="mono" font-size="10" font-weight="600" fill="#71717a">CLOUD &amp; INFRASTRUCTURE</text>
+    <g transform="translate(0, 18)">
+      <!-- Docker -->
+      <g transform="translate(0, 0)">
+        <rect width="80" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Docker</text>
+      </g>
+      <!-- Kubernetes (k8s) -->
+      <g transform="translate(90, 0)">
+        <rect width="135" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="67" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Kubernetes (k8s)</text>
+      </g>
+      <!-- Vercel -->
+      <g transform="translate(235, 0)">
+        <rect width="80" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Vercel</text>
+      </g>
+      <!-- Render -->
+      <g transform="translate(325, 0)">
+        <rect width="80" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="40" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Render</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ROW 4: AI & AGENT SYSTEMS -->
+  <g transform="translate(36, 254)">
+    <text x="0" y="10" class="mono" font-size="10" font-weight="600" fill="#71717a">AI &amp; AGENT SYSTEMS</text>
+    <g transform="translate(0, 18)">
+      <!-- LLM Orchestration -->
+      <g transform="translate(0, 0)">
+        <rect width="160" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="80" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">LLM Orchestration</text>
+      </g>
+      <!-- Agentic Systems -->
+      <g transform="translate(170, 0)">
+        <rect width="150" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="75" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Agentic Systems</text>
+      </g>
+      <!-- Multi-Agent Coordination -->
+      <g transform="translate(330, 0)">
+        <rect width="200" height="28" rx="5" fill="url(#pillGrad)" stroke="#27272a" stroke-width="1"/>
+        <text x="100" y="18" class="mono" font-size="11" fill="#e4e4e7" text-anchor="middle">Multi-Agent Coordination</text>
+      </g>
+    </g>
+  </g>
+</svg>

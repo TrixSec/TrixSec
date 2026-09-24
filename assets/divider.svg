@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="20" viewBox="0 0 830 20">
+  <defs>
+    <linearGradient id="divLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#27272a" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#27272a" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#71717a" stop-opacity="0.9"/>
+      <stop offset="75%" stop-color="#27272a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#27272a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Center Line -->
+  <line x1="30" y1="10" x2="800" y2="10" stroke="url(#divLineGrad)" stroke-width="1"/>
+  <!-- Center Accent Rhombus -->
+  <polygon points="415,6 419,10 415,14 411,10" fill="#a1a1aa" stroke="#27272a" stroke-width="0.8"/>
+</svg>

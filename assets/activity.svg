@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="170" viewBox="0 0 830 170">
+  <defs>
+    <linearGradient id="actBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+
+    <linearGradient id="actCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0d0d10"/>
+    </linearGradient>
+
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#52525b"/>
+      <stop offset="100%" stop-color="#e4e4e7"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    @keyframes barPulse {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+    .bar { animation: barPulse 3s ease-in-out infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="828" height="168" rx="12" fill="url(#actBg)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Section Title -->
+  <g transform="translate(32, 24)">
+    <text x="0" y="0" class="mono" font-size="11" font-weight="600" fill="#71717a" letter-spacing="1">ACTIVITY &amp; CONTRIBUTIONS</text>
+    <line x1="0" y1="10" x2="766" y2="10" stroke="#27272a" stroke-width="0.8"/>
+  </g>
+
+  <!-- 4 Metric Cards -->
+  <g transform="translate(32, 48)">
+
+    <!-- CARD 1: COMMITS & CODE FREQUENCY -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="98" rx="8" fill="url(#actCard)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="22" class="mono" font-size="10" fill="#71717a">COMMITS</text>
+      <text x="14" y="48" class="sans" font-size="20" font-weight="700" fill="#f4f4f5">Active</text>
+      <text x="14" y="66" class="mono" font-size="9.5" fill="#a1a1aa">Daily Continuous Sync</text>
+      <!-- Progress Bar -->
+      <rect x="14" y="78" width="152" height="4" rx="2" fill="#27272a"/>
+      <rect x="14" y="78" width="135" height="4" rx="2" fill="url(#barGrad)" class="bar"/>
+    </g>
+
+    <!-- CARD 2: PULL REQUESTS & MERGES -->
+    <g transform="translate(196, 0)">
+      <rect width="180" height="98" rx="8" fill="url(#actCard)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="22" class="mono" font-size="10" fill="#71717a">PULL REQUESTS</text>
+      <text x="14" y="48" class="sans" font-size="20" font-weight="700" fill="#f4f4f5">Merged</text>
+      <text x="14" y="66" class="mono" font-size="9.5" fill="#a1a1aa">Feature Branches &amp; CI</text>
+      <!-- Progress Bar -->
+      <rect x="14" y="78" width="152" height="4" rx="2" fill="#27272a"/>
+      <rect x="14" y="78" width="120" height="4" rx="2" fill="url(#barGrad)" class="bar"/>
+    </g>
+
+    <!-- CARD 3: CODE ARCHITECTURE & REVIEWS -->
+    <g transform="translate(392, 0)">
+      <rect width="180" height="98" rx="8" fill="url(#actCard)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="22" class="mono" font-size="10" fill="#71717a">ARCHITECTURE</text>
+      <text x="14" y="48" class="sans" font-size="20" font-weight="700" fill="#f4f4f5">Modular</text>
+      <text x="14" y="66" class="mono" font-size="9.5" fill="#a1a1aa">Clean Systems &amp; Tests</text>
+      <!-- Progress Bar -->
+      <rect x="14" y="78" width="152" height="4" rx="2" fill="#27272a"/>
+      <rect x="14" y="78" width="145" height="4" rx="2" fill="url(#barGrad)" class="bar"/>
+    </g>
+
+    <!-- CARD 4: REPOSITORY STARS & IMPACT -->
+    <g transform="translate(588, 0)">
+      <rect width="180" height="98" rx="8" fill="url(#actCard)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="22" class="mono" font-size="10" fill="#71717a">OPEN SOURCE</text>
+      <text x="14" y="48" class="sans" font-size="20" font-weight="700" fill="#f4f4f5">Public</text>
+      <text x="14" y="66" class="mono" font-size="9.5" fill="#a1a1aa">Agent Tooling &amp; Repos</text>
+      <!-- Progress Bar -->
+      <rect x="14" y="78" width="152" height="4" rx="2" fill="#27272a"/>
+      <rect x="14" y="78" width="110" height="4" rx="2" fill="url(#barGrad)" class="bar"/>
+    </g>
+
+  </g>
+</svg>

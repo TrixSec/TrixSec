@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="130" viewBox="0 0 830 130">
+  <defs>
+    <linearGradient id="socBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0d0d10"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="828" height="128" rx="12" fill="url(#socBg)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Section Title -->
+  <g transform="translate(32, 24)">
+    <text x="0" y="0" class="mono" font-size="11" font-weight="600" fill="#71717a" letter-spacing="1">CONNECT &amp; CONTACT</text>
+    <line x1="0" y1="10" x2="766" y2="10" stroke="#27272a" stroke-width="0.8"/>
+  </g>
+
+  <!-- 5 Social Items Grid -->
+  <g transform="translate(32, 48)">
+    
+    <!-- LinkedIn -->
+    <g transform="translate(0, 0)">
+      <rect width="144" height="54" rx="8" fill="url(#cardBg)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">LinkedIn</text>
+      <text x="14" y="40" class="mono" font-size="9.5" fill="#71717a">/in/vickyy01</text>
+    </g>
+
+    <!-- X / Twitter -->
+    <g transform="translate(155, 0)">
+      <rect width="144" height="54" rx="8" fill="url(#cardBg)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">X</text>
+      <text x="14" y="40" class="mono" font-size="9.5" fill="#71717a">@VickyBuilds</text>
+    </g>
+
+    <!-- Dev.to -->
+    <g transform="translate(310, 0)">
+      <rect width="144" height="54" rx="8" fill="url(#cardBg)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Dev.to</text>
+      <text x="14" y="40" class="mono" font-size="9.5" fill="#71717a">@trixsec</text>
+    </g>
+
+    <!-- Medium -->
+    <g transform="translate(465, 0)">
+      <rect width="144" height="54" rx="8" fill="url(#cardBg)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Medium</text>
+      <text x="14" y="40" class="mono" font-size="9.5" fill="#71717a">@trixcyrus</text>
+    </g>
+
+    <!-- Email -->
+    <g transform="translate(620, 0)">
+      <rect width="146" height="54" rx="8" fill="url(#cardBg)" stroke="#27272a" stroke-width="1"/>
+      <text x="14" y="24" class="sans" font-size="12" font-weight="700" fill="#f4f4f5">Email</text>
+      <text x="14" y="40" class="mono" font-size="9" fill="#71717a">rilleatevens@...</text>
+    </g>
+
+  </g>
+</svg>

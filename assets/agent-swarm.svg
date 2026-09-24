@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="390" viewBox="0 0 830 390">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141418"/>
+      <stop offset="100%" stop-color="#0d0d10"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  </style>
+
+  <rect x="1" y="1" width="828" height="388" rx="12" fill="url(#pBg)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Section Title -->
+  <g transform="translate(32, 28)">
+    <text x="0" y="0" class="mono" font-size="11" font-weight="600" fill="#71717a" letter-spacing="1">PROJECTS</text>
+    <line x1="0" y1="12" x2="766" y2="12" stroke="#27272a" stroke-width="0.8"/>
+  </g>
+
+  <!-- 1. FEATURED: EVAN -->
+  <g transform="translate(36, 56)">
+    <rect width="758" height="92" rx="8" fill="url(#cGrad)" stroke="#3f3f46" stroke-width="1"/>
+    <g transform="translate(18, 22)">
+      <text x="0" y="2" class="sans" font-size="16" font-weight="700" fill="#ffffff">Evan</text>
+      <rect x="52" y="-10" width="105" height="18" rx="4" fill="#27272a"/>
+      <text x="60" y="3" class="mono" font-size="9" font-weight="600" fill="#e4e4e7">AGENT SWARM</text>
+    </g>
+    <text x="18" y="52" class="sans" font-size="12" fill="#a1a1aa">
+      Autonomous system architecture featuring an integrated Agent Swarm engine for multi-agent coordination,
+    </text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#a1a1aa">
+      distributed task delegation, and asynchronous execution pipelines.
+    </text>
+  </g>
+
+  <!-- 2. GRID OF PROJECTS -->
+  <g transform="translate(36, 160)">
+    
+    <!-- MAPLE AI -->
+    <g transform="translate(0, 0)">
+      <rect width="369" height="100" rx="8" fill="url(#cGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="18" y="26" class="sans" font-size="14" font-weight="700" fill="#f4f4f5">Maple AI</text>
+      <text x="18" y="52" class="sans" font-size="11.5" fill="#a1a1aa">Autonomous educational research &amp; synthesis agent.</text>
+      <rect x="18" y="68" width="82" height="18" rx="3" fill="#18181b" stroke="#27272a" stroke-width="0.8"/>
+      <text x="24" y="80" class="mono" font-size="9" fill="#a1a1aa">Edu Agent</text>
+    </g>
+
+    <!-- AGENT SHIELD -->
+    <g transform="translate(389, 0)">
+      <rect width="369" height="100" rx="8" fill="url(#cGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="18" y="26" class="sans" font-size="14" font-weight="700" fill="#f4f4f5">Agent Shield</text>
+      <text x="18" y="52" class="sans" font-size="11.5" fill="#a1a1aa">Autonomous threat detection &amp; security agent.</text>
+      <rect x="18" y="68" width="98" height="18" rx="3" fill="#18181b" stroke="#27272a" stroke-width="0.8"/>
+      <text x="24" y="80" class="mono" font-size="9" fill="#a1a1aa">Cybersecurity</text>
+    </g>
+
+    <!-- QUEUE ORCHESTRATOR -->
+    <g transform="translate(0, 112)">
+      <rect width="369" height="100" rx="8" fill="url(#cGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="18" y="26" class="sans" font-size="14" font-weight="700" fill="#f4f4f5">Queue Orchestrator</text>
+      <text x="18" y="52" class="sans" font-size="11.5" fill="#a1a1aa">Distributed job queue pipeline with worker pools.</text>
+      <rect x="18" y="68" width="108" height="18" rx="3" fill="#18181b" stroke="#27272a" stroke-width="0.8"/>
+      <text x="24" y="80" class="mono" font-size="9" fill="#a1a1aa">BullMQ • Redis</text>
+    </g>
+
+    <!-- STREAM GATEWAY -->
+    <g transform="translate(389, 112)">
+      <rect width="369" height="100" rx="8" fill="url(#cGrad)" stroke="#27272a" stroke-width="1"/>
+      <text x="18" y="26" class="sans" font-size="14" font-weight="700" fill="#f4f4f5">Stream Gateway</text>
+      <text x="18" y="52" class="sans" font-size="11.5" fill="#a1a1aa">Low-latency event streaming &amp; RPC proxy.</text>
+      <rect x="18" y="68" width="120" height="18" rx="3" fill="#18181b" stroke="#27272a" stroke-width="0.8"/>
+      <text x="24" y="80" class="mono" font-size="9" fill="#a1a1aa">WebSockets • REST</text>
+    </g>
+
+  </g>
+</svg>

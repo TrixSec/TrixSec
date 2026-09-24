@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="60" viewBox="0 0 830 60">
+  <defs>
+    <linearGradient id="footBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+  </style>
+
+  <rect x="1" y="1" width="828" height="58" rx="10" fill="url(#footBg)" stroke="#27272a" stroke-width="1"/>
+
+  <text x="415" y="34" class="mono" font-size="11" fill="#71717a" text-anchor="middle" letter-spacing="0.5">
+    VICKY • AI SYSTEMS &amp; DISTRIBUTED INFRASTRUCTURE
+  </text>
+</svg>
